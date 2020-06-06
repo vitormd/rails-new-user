@@ -1,0 +1,46 @@
+require: rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7.1
+  Exclude:
+    - 'db/migrate/**/*'
+    - 'db/versions_db/**/*'
+    - log/**/*
+    - db/schema.rb
+    - bin/*
+    - node_modules/**/*
+
+# Project
+Layout/LineLength:
+  Max: 120
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+
+# 0.80
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+
+# 0.81
+Lint/RaiseException:
+  Enabled: false
+Lint/StructNewOverride:
+  Enabled: false
+
+# 0.82
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+
+# 0.83
+Style/SlicingWithRange:
+  Enabled: false
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: false
